@@ -178,7 +178,7 @@ You can direct Amazon S3 to perform specific actions in an object's lifetime by 
 
   For a versioned bucket \(versioning\-enabled or versioning\-suspended bucket\), the `Transition` action applies to the current object version\. To manage noncurrent versions, Amazon S3 defines the `NoncurrentVersionTransition` action \(described below\)\.
 
-+ **Expiration action element** – The `Expiration` action expires objects identified in the rule and applies to eligible objects in any of the Amazon S3 storage classes\. For mor information about storage classes, [Storage Classes](storage-class-intro.md)\. \. Amazon S3 makes all expired objects unavailable\. Whether the objects are permanently removed depends on the versioning state of the bucket\. 
++ **Expiration action element** – The `Expiration` action expires objects identified in the rule and applies to eligible objects in any of the Amazon S3 storage classes\. For more information about storage classes, [Storage Classes](storage-class-intro.md)\. \. Amazon S3 makes all expired objects unavailable\. Whether the objects are permanently removed depends on the versioning state of the bucket\. 
 **Important**  
 Object expiration lifecycle polices do not remove incomplete multipart uploads\. To remove incomplete multipart uploads you must use the **AbortIncompleteMultipartUpload** lifecycle configuration action that is described later in this section\. 
 
